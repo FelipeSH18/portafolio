@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Felipe de Jesús Serrano Hurtado</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Logo">
+                <span>Felipe de Jesús Serrano Hurtado</span>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>Sobre mí</h2>
+            <p>Soy Felipe de Jesús Serrano Hurtado, un estudiante de la UTVT y desarrollador web apasionado por crear soluciones digitales innovadoras. Con experiencia en HTML, CSS, JavaScript, PHP y Python, me especializo en diseñar sitios web responsivos y funcionales que cumplen con las necesidades de mis clientes.</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Habilidades</h2>
+            <div class="skill-bar">
+                <div class="skill-level html">HTML 5 - 90%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level css">CSS 3 - 85%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level js">JavaScript - 80%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level php">PHP - 75%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level python">Python - 50%</div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2>Portafolio</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Proyecto 1">
+                    <h3>Desarrollo Web 1</h3>
+                    <p>Buscador de recetas por categoria.</p>
+                    <a href="https://recetas-dsm-51-kumx.vercel.app/" target="_blank">Visitar Proyecto</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Proyecto 2">
+                    <h3>Desarrollo Web 2</h3>
+                    <p>Login con validación de registros.</p>
+                    <a href="https://recetaspractica.vercel.app/" target="_blank">Visitar Proyecto</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Proyecto 3">
+                    <h3>Desarrollo Web 3</h3>
+                    <p>Carito de compras que permite agregar y eliminar productos.</p>
+                    <a href="https://carricom.netlify.app/" target="_blank">Visitar Proyecto</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Proyecto 3">
+                    <h3>Desarrollo Web 4</h3>
+                    <p>Sistema de mensajeria que permite eliminar y editar.</p>
+                    <a href="https://mensajeriaa.netlify.app/" target="_blank">Visitar Proyecto</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contáctame</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <section class="personal-info">
+            <h2>Información Personal y Contacto</h2>
+            <p><strong>Nombre:</strong> Felipe de Jesús Serrano Hurtado</p>
+            <p><strong>Profesión:</strong> Informático y Desarrollador Web</p>
+            <p><strong>Email:</strong> felipe.serrano@gmail.com</p>
+            <p><strong>Teléfono:</strong> +52 7223936514</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/felipe-serrano" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/felipe-serrano" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/felipe-serrano" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Felipe de Jesús Serrano Hurtado. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Script para el menú hamburguesa
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active        navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
